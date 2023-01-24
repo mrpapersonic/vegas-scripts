@@ -6,8 +6,7 @@ public class EntryPoint {
 			if (track.IsVideo()) {
 				foreach (TrackEvent evnt in track.Events) {
 					VideoEvent videoEvent = (VideoEvent)evnt;
-					VideoResampleMode VRMode = VideoResampleMode.Disable;
-					videoEvent.ResampleMode = VRMode;
+					videoEvent.ResampleMode = VideoResampleMode.Disable;
 				}
 			}
 		}
