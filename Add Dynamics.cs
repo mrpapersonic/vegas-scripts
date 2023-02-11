@@ -21,7 +21,7 @@ public class EntryPoint {
                                 }
                             }
                             Effect DynamicsPlugin = audio.Effects.AddEffect(plugin);
-                            foreach (Preset preset in DynamicsPlugin.Presets) {
+                            foreach (EffectPreset preset in DynamicsPlugin.Presets) {
                                 if (preset.Name == "preset") {
                                     DynamicsPlugin.CurrentPreset = preset;
                                 }
